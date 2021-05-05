@@ -1,0 +1,58 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .button {
+    all: unset;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 150px;
+    height: 26px;
+
+    background: linear-gradient( rgb(252, 185, 209), rgb(241, 94, 148) );
+    border: 1px solid rgb(221, 95, 141);
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    color: white;
+  }
+
+  .small_dropdown{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 13px;
+    height: 11px;
+    margin-left: 10px;
+    color: rgb(255, 255, 155);
+    font-size: 17px;
+    border-radius: 3px;
+    background: linear-gradient( rgb(255, 173, 203), rgb(245, 78, 139) );
+    border: 2px solid rgb(237,51,119);
+  }
+  .drop-content {
+    position: absolute;
+    z-index: 1;
+    width: 150px;
+    height: 50px;
+  }
+  .drop-content a {
+    all: unset;
+    display: block;
+    width: 150px;
+    height: 24px;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    cursor: pointer;
+    z-index: 1;
+  
+  }
+  

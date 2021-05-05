@@ -1,0 +1,26 @@
+{% extends 'base.html' %} 
+{% block content %} 
+{% load static %} 
+
+  <head>
+
+    <link rel="stylesheet" href="{% static 'myapp/css/main.css' %}" />
+
+  </head>
+  <body>
+<div class="right_title">
+    게시판
+</div>
+<hr>
+
+
+<div class="main_button">
+    <div class="delete_button">삭제하기</div>
+    <div class="write_button">게시물 작성하기</div>
+</div>
+
+</body>
+
+
+
+{% endblock %}

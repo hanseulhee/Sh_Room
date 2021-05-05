@@ -1,0 +1,96 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>shroom</title>
+    <link href="{% static 'myapp/css/base.css' %}" rel="stylesheet" />
+    <link href="{% static 'myapp/css/dropdown.css' %}" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="full_tool">
+      <img src="{% static 'myapp/img/background.PNG' %}" />
+    </div>
+
+    <div class="tool_border">
+      <div class="title">쥬니버네이버 파니룸 - made seulhee</div>
+      <div class="tool_button">
+        <div class="tool_button_border">_</div>
+        <div class="tool_button_border">ㅁ</div>
+        <div class="tool_button_border_x">X</div>
+      </div>
+    </div>
+    <div class="white_border">
+      <div class="main_tool">
+        <div class="top_tool">
+          <div class="profile">
+            <img src="{% static 'myapp/img/profile_img.PNG' %}" />
+          </div>
+          <div class="navbar">
+            <div class="introduce_tool">
+              <div class="introduce_row">
+                <h2>슬희의 미니홈피 ✿</h2>
+                <div class="link_copy">홈피주소 복사하기</div>
+              </div>
+
+              <h4>방마다 꾸며놨으니 관람하고 마니 와주세요</h4>
+            </div>
+            <div class="navbar_mini">
+              <div class="visitor">
+                <div class="visitor_count">오늘 142명 &ensp;</div>
+                <b>|</b>
+                <div class="total_count">&ensp; 전체 546명</div>
+              </div>
+              <a href="#">게시판</a>
+              <a href="#">내소개</a>
+              <a href="#">방명록</a>
+              <a href="#">꾸미기</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 여기서부터 큰 틀 -->
+        <div class="big_tool">
+          <div class="side_tool">
+
+
+            <div class="dropdown">
+              <button onclick="menu()" class="button">
+                <div class="small_dropdown">▾</div> &ensp;게시판</button>
+              <div style="display: none" class="drop-content">
+
+                <a href="{% url 'main' %}">게시판</a>
+                <a href="#">포토</a>
+                <a href="#">뮤직 박스 ♪♪</a>
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <button onclick="menu()" class="button">
+                <div class="small_dropdown">▾</div> &ensp;내소개</button>
+              <div style="display: none" class="drop-content">
+                <a href="#">내 프로필</a>
+                <a href="#">다이어리</a>
+              </div>
+            </div>
+
+            <button class="button">   
+            <div class="small_dropdown">▾</div> &ensp;방명록</button>
+            <button class="button">       
+            <div class="small_dropdown">▾</div> &ensp;꾸미기</button>
+
+
+          </div>
+
+
+          <div class="right_tool">
+            {% block content %} {% endblock %}
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+    <script src="{% static 'myapp/js/dropdown.js' %}"></script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+.right_title{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    margin-left: 11px;
+    margin-top: 7px;
+    margin-bottom: 4px;
+}
+
+hr{
+    content: '';
+    display: block;
+    margin-top: 1px;
+    border-top: 1px solid rgb(218, 69, 124);
+    border-bottom: 1px solid rgb(218, 69, 124);
+    width: 100%;
+
+}
+
+
+.main_button{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    height: 35px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    
+    background-color: rgb(255, 227, 237);
+    border-top: rgb(255, 128, 174);
+}
+
+.delete_button, .write_button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: rgb(123,75,194);
+    
+    margin-right: 10px;
+    width: 70px;
+    height: 24px;
+    background-color: rgb(233, 218, 253);
+    border: 1px solid rgb(123,75,194);
+    border-radius: 3px;
+}
+
+.write_button{
+    width: 110px;
+}
