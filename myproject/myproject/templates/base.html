@@ -1,4 +1,5 @@
 {% load static %}
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -8,9 +9,11 @@
     <link href="{% static 'myapp/css/dropdown.css' %}" rel="stylesheet" />
   </head>
   <body>
-    <div class="full_tool">
-      <img src="{% static 'myapp/img/background.PNG' %}" />
+    
+      <div class="full_tool">
+      <img src="{% static 'myapp/img/background.PNG' %}"/>
     </div>
+
 
     <div class="tool_border">
       <div class="title">쥬니버네이버 파니룸 - made seulhee</div>
@@ -26,7 +29,7 @@
           <div class="profile">
             <img src="{% static 'myapp/img/profile_img.PNG' %}" />
           </div>
-          <div class="navbar">
+          <div class="navbar" >
             <div class="introduce_tool">
               <div class="introduce_row">
                 <h2>슬희의 미니홈피 ✿</h2>
@@ -89,8 +92,54 @@
         </div>
       </div>
     </div>
+
+    <div class="logo_tool">
+      <div class="main_logo">
+        <img src="{% static 'myapp/img/instagram.png' %}" />
+        <div class="logo_name">instagram</div>
+      </div>
+  
+      <div class="main_logo">
+        <img src="{% static 'myapp/img/book.png' %}" />
+        <div class="logo_name">전공서적대여</div>
+      </div>
+  
+      <div class="main_logo">
+        <img src="{% static 'myapp/img/myhompi.png' %}" />
+        <div class="logo_name">미니홈피</div>
+      </div>
+  
+      <div class="kakao_logo">
+        <img src="{% static 'myapp/img/kakao.png' %}" />
+        <div class="logo_name">카카오톡</div>
+      </div>
+    </div>
+    <div class="footer_bar">
+  
+        <img src="{% static 'myapp/img/window.PNG' %}" />
+      <div class="search">
+        <h4>검색하려면 여기에 입력하십시오.</h4>
+      </div>
   
 
+    <div class="footer_right">  
+      <div class="js-clock">
+        <h1>00:00</h1>
+      </div>
+      <div class="js-date">
+        <h2>00-00-00</h2>
+      </div>
+      </div>
+    </div>
+
+
+
     <script src="{% static 'myapp/js/dropdown.js' %}"></script>
+    <script src="{% static 'myapp/js/dragAnddrop.js' %}"></script>
+    <script src="{% static 'myapp/js/date.js' %}"></script>
+    <script src="{% static 'myapp/js/clock.js' %}"></script>
   </body>
 </html>
+
+    
+ 

@@ -7,8 +7,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 150px;
-    height: 26px;
+    width: 100px;
+    height: 20px;
 
     background: linear-gradient( rgb(252, 185, 209), rgb(241, 94, 148) );
     border: 1px solid rgb(221, 95, 141);
@@ -16,7 +16,7 @@
     cursor: pointer;
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 500;
-    font-size: 13px;
+    font-size: 11px;
     color: white;
   }
 
@@ -37,15 +37,15 @@
   .drop-content {
     position: absolute;
     z-index: 1;
-    width: 150px;
+    width: 116px;
     height: 50px;
   }
   .drop-content a {
     all: unset;
     display: block;
-    width: 150px;
+    width: 100px;
     height: 24px;
-    font-size: 16px;
+    font-size: 12px;
     background-color: white;
     color: black;
     cursor: pointer;
@@ -55,4 +55,7 @@
     z-index: 1;
   
   }
+
+
+  
   
