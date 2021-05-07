@@ -52,3 +52,27 @@ hr{
 .write_button{
     width: 100px;
 }
+.home_img{
+    all: unset;
+
+  width: 103px;
+  height: 100px;
+}
+.main_post{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.post_row{
+    display: flex;
+    flex-direction: row;  
+}
+
+.post_row > h4{
+    all: unset;
+    font-size: 11px;
+    color:rgb(160, 160, 160);
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 300;
+}

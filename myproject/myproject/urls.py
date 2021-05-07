@@ -15,10 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf import settings
 from myapp.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', main, name='main'),
+        path('<str:id>', detail, name="detail"), # 데이터 베이스의 id값 
+   
 
 ]

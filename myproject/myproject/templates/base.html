@@ -44,7 +44,7 @@
                 <b>|</b>
                 <div class="total_count">&ensp; 전체 546명</div>
               </div>
-              <a href="#">게시판</a>
+              <a href="{% url 'main' %}">게시판</a>
               <a href="#">내소개</a>
               <a href="#">방명록</a>
               <a href="#">꾸미기</a>
@@ -115,12 +115,13 @@
       </div>
     </div>
     <div class="footer_bar">
-  
+      <div class="footer_left">  
         <img src="{% static 'myapp/img/window.PNG' %}" />
       <div class="search">
         <h4>검색하려면 여기에 입력하십시오.</h4>
       </div>
-  
+    </div>
+
 
     <div class="footer_right">  
       <div class="js-clock">
