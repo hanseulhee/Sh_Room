@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'myapp.apps.MyappConfig',
+    'blog',
 ]
 
 MIDDLEWARE = [
@@ -122,14 +122,16 @@ STATIC_URL = '/static/'
 
 # 현재 static 파일들이 어디에 있는지 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'myapp', 'static')
+    os.path.join(BASE_DIR, 'blog', 'static')
 ]
 
 # static 파일을 어디에 모을건지 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+MEDIA_URL = '/media/'
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
-
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

@@ -1,0 +1,37 @@
+{% extends 'base.html' %} {% block content %} {% load static %}
+
+
+<head>
+  <link rel="stylesheet" href="{% static 'css/main.css' %}" />
+</head>
+<body>
+  <div class="right_title">게시판</div>
+  <hr />
+
+  <div class="list_post">
+  {% for blog in blogs %}
+  <div class="main_post">
+  <a href="{% url 'detail' blog.id %}">
+  
+    {% if blog.image %}
+    <img src="{{blog.image.url}}" alt="" class="home_img" />
+    {% endif %}
+    <div class="post_row">
+    <input type="checkbox" name="delete" />
+    <h4 class="post-title">{{blog.title}}</h4>
+  </div>
+  </a>
+</div>
+  {% endfor %} 
+</div>
+  <div class="main_button">
+    <div class="delete_button">
+      <a href="#">삭제하기</a>
+    </div>
+    <div class="write_button">
+      <a href="#">게시물 작성하기</a>
+    </div>
+  </div>
+</body>
+
+{% endblock %}

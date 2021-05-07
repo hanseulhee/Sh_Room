@@ -5,18 +5,18 @@
   <head>
     <meta charset="UTF-8" />
     <title>shroom</title>
-    <link href="{% static 'myapp/css/base.css' %}" rel="stylesheet" />
-    <link href="{% static 'myapp/css/dropdown.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/base.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/dropdown.css' %}" rel="stylesheet" />
   </head>
   <body>
     
       <div class="full_tool">
-      <img src="{% static 'myapp/img/background.PNG' %}"/>
+      <img src="{% static 'background.PNG' %}"/>
     </div>
 
 
     <div class="tool_border">
-      <div class="title">쥬니버네이버 파니룸 - made seulhee</div>
+      <div class="title">쥬니버네이버 파니룸 - made by seulhee</div>
       <div class="tool_button">
         <div class="tool_button_border">_</div>
         <div class="tool_button_border">ㅁ</div>
@@ -27,7 +27,7 @@
       <div class="main_tool">
         <div class="top_tool">
           <div class="profile">
-            <img src="{% static 'myapp/img/profile_img.PNG' %}" />
+            <img src="{% static 'profile_img.PNG' %}" />
           </div>
           <div class="navbar" >
             <div class="introduce_tool">
@@ -40,7 +40,7 @@
             </div>
             <div class="navbar_mini">
               <div class="visitor">
-                <div class="visitor_count">오늘 142명 &ensp;</div>
+                <div class="visitor_count">오늘 12명 &ensp;</div>
                 <b>|</b>
                 <div class="total_count">&ensp; 전체 546명</div>
               </div>
@@ -55,8 +55,6 @@
         <!-- 여기서부터 큰 틀 -->
         <div class="big_tool">
           <div class="side_tool">
-
-
             <div class="dropdown">
               <button onclick="menu()" class="button">
                 <div class="small_dropdown">▾</div> &ensp;게시판</button>
@@ -95,28 +93,28 @@
 
     <div class="logo_tool">
       <div class="main_logo">
-        <img src="{% static 'myapp/img/instagram.png' %}" />
+        <img src="{% static 'instagram.png' %}" />
         <div class="logo_name">instagram</div>
       </div>
   
       <div class="main_logo">
-        <img src="{% static 'myapp/img/book.png' %}" />
+        <img src="{% static 'book.png' %}" />
         <div class="logo_name">전공서적대여</div>
       </div>
   
       <div class="main_logo">
-        <img src="{% static 'myapp/img/myhompi.png' %}" />
+        <img src="{% static 'myhompi.png' %}" />
         <div class="logo_name">미니홈피</div>
       </div>
   
       <div class="kakao_logo">
-        <img src="{% static 'myapp/img/kakao.png' %}" />
+        <img src="{% static 'kakao.png' %}" />
         <div class="logo_name">카카오톡</div>
       </div>
     </div>
     <div class="footer_bar">
       <div class="footer_left">  
-        <img src="{% static 'myapp/img/window.PNG' %}" />
+        <img src="{% static 'window.PNG' %}" />
       <div class="search">
         <h4>검색하려면 여기에 입력하십시오.</h4>
       </div>
@@ -135,10 +133,10 @@
 
 
 
-    <script src="{% static 'myapp/js/dropdown.js' %}"></script>
-    <script src="{% static 'myapp/js/dragAnddrop.js' %}"></script>
-    <script src="{% static 'myapp/js/date.js' %}"></script>
-    <script src="{% static 'myapp/js/clock.js' %}"></script>
+    <script src="{% static 'js/dropdown.js' %}"></script>
+    <script src="{% static 'js/dragAnddrop.js' %}"></script>
+    <script src="{% static 'js/date.js' %}"></script>
+    <script src="{% static 'js/clock.js' %}"></script>
   </body>
 </html>
 

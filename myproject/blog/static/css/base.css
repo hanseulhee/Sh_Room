@@ -1,0 +1,379 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;500&family=Roboto:wght@100;300;500;700&family=Single+Day&display=swap");
+html,
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  background-color: #7c91c0;
+  z-index: -10;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.full_tool {
+  position: absolute;
+  z-index: -3;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  width: 635px;
+  height: 620px;
+  border: 1px solid rgb(31, 31, 31);
+}
+
+.full_tool > img {
+  z-index: -2;
+  width: 635px;
+  height: 620px;
+  object-fit: cover;
+}
+.title {
+  font-family: "Single Day", cursive;
+  font-size: 17px;
+  margin-left: 10px;
+}
+
+.white_border {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  margin-top: 7px;
+  width: 582px;
+  height: 566px;
+  border-radius: 7px;
+}
+
+.tool_border {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0256e6;
+  color: #f1f4fa;
+  height: 33px;
+  width: 635px;
+  box-shadow: inset 0 0 17px rgb(47, 144, 253), 0 0 1px rgb(34, 94, 234);
+}
+
+.tool_button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.tool_button_border,
+.tool_button_border_x {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px #dee8fd;
+  border-radius: 2px;
+  box-shadow: 1px 1px 2px 2px rgb(110, 152, 248) inset;
+  width: 18px;
+  height: 18px;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.tool_button_border_x {
+  background-color: #d14219;
+  box-shadow: 1px 1px 2px 2px rgb(235, 136, 108) inset;
+}
+a{
+  all: unset;
+}
+
+.main_tool {
+  position: relative;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f3c36b;
+  margin-top: 12px;
+  width: 565px;
+  height: 545px;
+  border-radius: 2px;
+}
+
+.top_tool {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 570px;
+  height: 91px;
+  background-color: white;
+  border-radius: 7px;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.link_copy {
+  font-size: 12px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  width: 107px;
+  text-align: center;
+  margin-right: 10px;
+  margin-top: 5px;
+  height: 20px;
+  color: rgb(221, 49, 112);
+  background: linear-gradient(rgb(255, 243, 245), #ffc9d7);
+  border-radius: 3px;
+  border: 1px solid rgb(206, 45, 104);
+}
+
+.profile > img {
+  width: 76px;
+  height: 81px;
+  border-width: 5px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, #ffb3c6 40%, rgb(239, 54, 121));
+  border-image-slice: 1;
+  border-radius: 20px;
+}
+
+.introduce_tool {
+  display: flex;
+  flex-direction: column;
+  height: 60px;
+  width: 459px;
+  border-width: 5px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, #ffb3c6, rgb(248, 135, 177));
+  border-image-slice: 1;
+  border-radius: 20px;
+  padding-left: 10px;
+}
+
+.introduce_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.introduce_row > h2 {
+  all: unset;
+  font-size: 16px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+}
+
+.introduce_tool > h4 {
+  all: unset;
+  font-size: 13px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 300;
+}
+
+.visitor {
+  display: flex;
+  flex-direction: row;
+
+  width: 285px;
+
+  box-shadow: inset 0px 1px 0px 1px rgb(214, 46, 108);
+  color: rgb(254, 188, 208);
+  font-size: 12px;
+  border-radius: 2px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 300;
+  margin-left: 10px;
+  padding-left: 10px;
+  padding-top: 4px;
+  margin-right: 10px;
+}
+
+.total_count {
+  color: white;
+}
+.visitor_count {
+  color: #fdcb6e;
+}
+.navbar_mini {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: linear-gradient(rgb(248, 135, 177), rgb(239, 54, 121));
+  height: 36px;
+  width: 479px;
+}
+
+.navbar_mini > a {
+  all: unset;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: white;
+  width: 70px;
+  height: 25px;
+  background: linear-gradient(rgb(248, 135, 177), rgb(239, 54, 121));
+  border: 2px solid rgb(237, 51, 119);
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.big_tool {
+  display: flex;
+  flex-direction: row;
+  width: 530px;
+  height: 425px;
+  background: linear-gradient(
+    to right bottom,
+    #ffccd8,
+    rgb(255, 149, 188) 80%,
+    rgb(239, 54, 121) 100%
+  );
+  border: 1px solid rgb(218, 69, 124);
+  border-radius: 7px;
+  margin-top: 14px;
+}
+
+.side_tool {
+  width: 101px;
+  height: 510px;
+  margin: 10px;
+}
+
+.right_tool {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  width: 400px;
+  height: 400px;
+  background-color: white;
+  border: 1px solid rgb(218, 69, 124);
+}
+
+.footer_bar {
+  all: unset;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+
+  width: 100vw;
+  height: 41px;
+  background-color: #E0DEDC;
+  padding-left: 25px;
+  justify-content: space-between;
+}
+
+
+.logo_tool{
+  position: fixed;
+  left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 17px;
+    width: 130px;
+    height: 300px;
+}
+
+
+
+.logo_name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Noto Sans KR", sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+    width:86px;
+    height: 20px;
+    background-color: rgb(241,248,255);
+    
+    border-radius: 1px;
+}
+
+.main_logo > img{
+  
+  margin-bottom: 10px;
+}
+
+.main_logo, .kakao_logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+
+
+}
+
+.kakao_logo > img{
+  all: unset;
+  width: 50px;height: 50px;
+}
+.footer_left > img{
+  all: unset;
+  padding-top: 5px;
+  width: 22px;
+  height: 27px;
+}
+
+
+.search{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 330px;
+  background-color: whitesmoke;
+
+  height: 41px;
+  
+
+  padding-left: 10px;
+  margin-left: 17px;
+
+}
+
+.search > h4{
+  all: unset;
+  
+  color:rgb(39, 39, 39);
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+}
+
+.js-clock > h1,
+.js-date > h2{
+  all: unset;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 100;
+  font-size: 10px;
+
+}
+
+.footer_left{
+  display: flex;
+  flex-direction: row;
+}
+
+
+.footer_right{
+  display: flex;
+  flex-direction: column;
+  padding-right: 40px;
+ 
+
+}
