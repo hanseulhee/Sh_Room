@@ -5,7 +5,7 @@ from django.utils import timezone
 # Create your views here.
 
 def main(request):
-    blogs = Blog.objects.all()
+    blogs = Blog.objects.order_by('-pub_date')
     return render(request, 'main.html', {'blogs' : blogs})
 
 
